@@ -62,7 +62,7 @@ uses U_Usuario;
 
 procedure Tfrm_Principal.AbreTelaUsuario;
 begin
-  frm_Usuario := Tfrm_Usuario.Create(self);
+  frm_Usuario ;+Tfrm_Usuario.Create(self);
   frm_Usuario.ShowModal;
 
   try
@@ -80,13 +80,6 @@ end;
 
 procedure Tfrm_Principal.SpeedButton10Click(Sender: TObject);
 begin
-  if MessageDlg('Deseja sair do sistema?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
-    begin
-      Application.Terminate;
-    end
-  else
-    Abort;
-
   close;
 end;
 

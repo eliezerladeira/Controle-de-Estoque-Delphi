@@ -33,7 +33,6 @@ type
     procedure btn_CancelarClick(Sender: TObject);
     procedure btn_AtualizarClick(Sender: TObject);
     procedure TrataBotoes();
-    procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,11 +47,6 @@ implementation
 {$R *.dfm}
 
 uses U_DM;
-
-procedure Tfrm_Padrao.btnSairClick(Sender: TObject);
-begin
-  close;
-end;
 
 procedure Tfrm_Padrao.btn_AtualizarClick(Sender: TObject);
 begin
