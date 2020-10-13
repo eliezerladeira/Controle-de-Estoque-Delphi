@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2020/10/03 15:14:03.608,=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/10/03 15:18:37.209,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Principal.pas=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/10/03 15:18:37.209,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Principal.dfm=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2020/10/03 15:19:41.148,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Controle_Estoque.dproj=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2020/10/03 16:14:09.287,=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas</Transaction>
-    <Transaction>2020/10/03 16:15:07.691,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_DM.dfm=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.dfm</Transaction>
-    <Transaction>2020/10/03 16:15:07.691,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_DM.pas=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas</Transaction>
-    <Transaction>2020/10/03 17:01:50.457,=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas</Transaction>
-    <Transaction>2020/10/03 17:03:10.707,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Padrao.pas=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas</Transaction>
-    <Transaction>2020/10/03 17:03:10.708,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Padrao.dfm=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.dfm</Transaction>
+	<Transactions>
+    <Transaction>2020/10/03 15:14:03.000.608,=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/10/03 15:18:37.000.209,C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Principal.dfm</Transaction>
+    <Transaction>2020/10/03 15:18:37.000.209,C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Principal.pas</Transaction>
+    <Transaction>2020/10/03 15:19:41.000.148,C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Controle_Estoque.dproj</Transaction>
+    <Transaction>2020/10/03 16:14:09.000.287,=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas</Transaction>
+    <Transaction>2020/10/03 16:15:07.000.691,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.dfm=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_DM.dfm</Transaction>
+    <Transaction>2020/10/03 16:15:07.000.691,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_DM.pas</Transaction>
+    <Transaction>2020/10/03 17:01:50.000.457,=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas</Transaction>
+    <Transaction>2020/10/03 17:03:10.000.708,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.dfm=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Padrao.dfm</Transaction>
+    <Transaction>2020/10/03 17:03:10.000.707,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Padrao.pas</Transaction>
+    <Transaction>2020/10/12 19:38:39.777,=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.pas</Transaction>
+    <Transaction>2020/10/12 22:26:27.984,C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Forms\U_Usuario.pas=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.pas</Transaction>
+    <Transaction>2020/10/12 22:26:27.987,C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Forms\U_Usuario.dfm=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

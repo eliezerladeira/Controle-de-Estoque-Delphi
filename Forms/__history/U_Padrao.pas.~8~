@@ -24,7 +24,6 @@ type
     btn_Pesquisar: TBitBtn;
     q_padrao: TFDQuery;
     ds_padrao: TDataSource;
-    btnSair: TBitBtn;
     procedure FormKeyPress(Sender: TObject; var Key: Char);
     procedure btn_NovoClick(Sender: TObject);
     procedure btn_DeletarClick(Sender: TObject);

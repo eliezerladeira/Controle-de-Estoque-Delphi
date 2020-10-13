@@ -5,8 +5,8 @@ object DM: TDM
   object Conexao: TFDConnection
     Params.Strings = (
       
-        'Database=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-De' +
-        'lphi\EXE\Data\ESTOQUE.FDB'
+        'Database=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\EXE\Dat' +
+        'a\ESTOQUE.FDB'
       'User_Name=SYSDBA'
       'Password=123456'
       'Protocol=TCPIP'
@@ -14,6 +14,7 @@ object DM: TDM
       'Port=3050'
       'CharacterSet=WIN1252'
       'DriverID=FB')
+    Connected = True
     LoginPrompt = False
     Left = 24
     Top = 16

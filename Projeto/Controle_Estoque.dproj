@@ -115,6 +115,10 @@
             <Form>frm_Padrao</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="..\Forms\U_Usuario.pas">
+            <Form>frm_Usuario</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -145,7 +149,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="..\EXE\Controle_Estoque.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="..\..\Delphi\Estoque\EXE\Controle_Estoque.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Controle_Estoque.exe</RemoteName>
                         <Overwrite>true</Overwrite>

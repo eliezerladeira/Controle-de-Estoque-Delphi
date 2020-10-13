@@ -10,7 +10,7 @@ uses
 type
   Tfrm_Principal = class(TForm)
     Panel1: TPanel;
-    btnUsuario: TSpeedButton;
+    SpeedButton1: TSpeedButton;
     SpeedButton2: TSpeedButton;
     SpeedButton3: TSpeedButton;
     SpeedButton4: TSpeedButton;
@@ -43,8 +43,6 @@ type
     Sobre1: TMenuItem;
     procedure Timer1Timer(Sender: TObject);
     procedure SpeedButton10Click(Sender: TObject);
-    procedure btnUsuarioClick(Sender: TObject);
-    procedure AbreTelaUsuario();
   private
     { Private declarations }
   public
@@ -58,26 +56,6 @@ implementation
 
 {$R *.dfm}
 
-uses U_Usuario;
-
-procedure Tfrm_Principal.AbreTelaUsuario;
-begin
-  frm_Usuario ;+Tfrm_Usuario.Create(self);
-  frm_Usuario.ShowModal;
-
-  try
-
-  finally
-    frm_Usuario.Free;
-    frm_Usuario := nil;
-  end;
-end;
-
-procedure Tfrm_Principal.btnUsuarioClick(Sender: TObject);
-begin
-  AbreTelaUsuario;
-end;
-
 procedure Tfrm_Principal.SpeedButton10Click(Sender: TObject);
 begin
   close;
@@ -88,7 +66,7 @@ begin
   // insere dados no status bar
   StatusBar1.Panels[0].Text := DateTostr(now);
   StatusBar1.Panels[1].Text := TimeTostr(now);
-  StatusBar1.Panels[2].Text := 'Seja bem vindo ao sistema ';
+  StatusBar1.Panels[2].Text := "Seja bem vindo ao sistema ";
 end;
 
 end.
