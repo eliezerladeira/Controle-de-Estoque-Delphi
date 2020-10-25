@@ -29,6 +29,9 @@ type
     DBTipo: TDBComboBox;
     procedure btn_NovoClick(Sender: TObject);
     procedure btn_GravarClick(Sender: TObject);
+    procedure btn_CancelarClick(Sender: TObject);
+    procedure TrataCampos();
+    procedure btn_EditarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,12 +45,23 @@ implementation
 
 {$R *.dfm}
 
+procedure Tfrm_Usuario.btn_CancelarClick(Sender: TObject);
+begin
+  inherited;
+//  TrataCampos;
+end;
+
+procedure Tfrm_Usuario.btn_EditarClick(Sender: TObject);
+begin
+  inherited;
+//  TrataCampos;
+  DBNome.SetFocus;
+end;
+
 procedure Tfrm_Usuario.btn_GravarClick(Sender: TObject);
 begin
   inherited;
-  DBNome.Enabled := false;
-  DBSenha.Enabled := false;
-  DBTipo.Enabled := false;
+//  TrataCampos;
 end;
 
 procedure Tfrm_Usuario.btn_NovoClick(Sender: TObject);
@@ -62,11 +76,16 @@ begin
   q_padraoID_USUARIO.AsInteger := prox;
 
   DBCadastro.Text := DateToStr(now);
-  DBNome.Enabled := true;
-  DBSenha.Enabled := true;
-  DBTipo.Enabled := true;
+//  TrataCampos;
   DBNome.SetFocus;
 
+end;
+
+procedure Tfrm_Usuario.TrataCampos;
+begin
+  DBNome.Enabled := not DBNome.Enabled;
+  DBSenha.Enabled := not DBSenha.Enabled;
+  DBTipo.Enabled := not DBTipo.Enabled;
 end;
 
 end.

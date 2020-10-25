@@ -77,7 +77,6 @@ inherited frm_Usuario: Tfrm_Usuario
     Height = 21
     DataField = 'NOME'
     DataSource = ds_padrao
-    Enabled = False
     TabOrder = 1
   end
   object DBSenha: TDBEdit [9]
@@ -87,7 +86,6 @@ inherited frm_Usuario: Tfrm_Usuario
     Height = 21
     DataField = 'SENHA'
     DataSource = ds_padrao
-    Enabled = False
     PasswordChar = '*'
     TabOrder = 2
   end
@@ -108,7 +106,6 @@ inherited frm_Usuario: Tfrm_Usuario
     Height = 21
     DataField = 'TIPO'
     DataSource = ds_padrao
-    Enabled = False
     Items.Strings = (
       'Administrador'
       'Apoio')

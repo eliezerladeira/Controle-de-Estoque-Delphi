@@ -26,7 +26,6 @@ object frm_Padrao: Tfrm_Padrao
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 795
     object btn_Novo: TBitBtn
       Left = 8
       Top = 1
@@ -1158,8 +1157,6 @@ object frm_Padrao: Tfrm_Padrao
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 1
-    ExplicitTop = 170
-    ExplicitWidth = 795
     object DBNavigator1: TDBNavigator
       Left = 150
       Top = 8
