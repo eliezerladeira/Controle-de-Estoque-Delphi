@@ -116,9 +116,7 @@ inherited frm_Usuario: Tfrm_Usuario
   end
   inherited q_padrao: TFDQuery
     UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
-    UpdateOptions.FetchGeneratorsPoint = gpImmediate
-    UpdateOptions.GeneratorName = 'GEN_ID_USUARIO'
-    UpdateOptions.AutoIncFields = 'id_usuario'
+    UpdateOptions.FetchGeneratorsPoint = gpNone
     SQL.Strings = (
       
         'select id_usuario, nome, senha, tipo, cadastro from usuario orde' +

@@ -51,8 +51,15 @@ begin
 end;
 
 procedure Tfrm_Usuario.btn_NovoClick(Sender: TObject);
+var prox : integer;
 begin
   inherited;
+
+  q_padrao.Active := true;
+  q_padrao.Last;
+  prox := q_padraoID_USUARIO.AsInteger + 1;
+  q_padrao.Append;
+  q_padraoID_USUARIO.AsInteger := prox;
 
   DBCadastro.Text := DateToStr(now);
   DBNome.Enabled := true;
