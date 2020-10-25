@@ -28,6 +28,7 @@ type
     DBCadastro: TDBEdit;
     DBTipo: TDBComboBox;
     procedure btn_NovoClick(Sender: TObject);
+    procedure btn_GravarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,11 +42,22 @@ implementation
 
 {$R *.dfm}
 
+procedure Tfrm_Usuario.btn_GravarClick(Sender: TObject);
+begin
+  inherited;
+  DBNome.Enabled := false;
+  DBSenha.Enabled := false;
+  DBTipo.Enabled := false;
+end;
+
 procedure Tfrm_Usuario.btn_NovoClick(Sender: TObject);
 begin
   inherited;
 
   DBCadastro.Text := DateToStr(now);
+  DBNome.Enabled := true;
+  DBSenha.Enabled := true;
+  DBTipo.Enabled := true;
   DBNome.SetFocus;
 
 end;

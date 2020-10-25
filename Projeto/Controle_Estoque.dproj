@@ -83,8 +83,8 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
-        <DCC_ExeOutput>C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\EXE\</DCC_ExeOutput>
-        <DCC_DcuOutput>C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\DCU\</DCC_DcuOutput>
+        <DCC_ExeOutput>C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\EXE\</DCC_ExeOutput>
+        <DCC_DcuOutput>C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\DCU\</DCC_DcuOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
