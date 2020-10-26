@@ -1,0 +1,91 @@
+unit U_Usuario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, U_Padrao, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.DBCtrls, Vcl.StdCtrls,
+  Vcl.Buttons, Vcl.ExtCtrls, Vcl.Mask;
+
+type
+  Tfrm_Usuario = class(Tfrm_Padrao)
+    q_padraoID_USUARIO: TIntegerField;
+    q_padraoNOME: TStringField;
+    q_padraoSENHA: TStringField;
+    q_padraoTIPO: TStringField;
+    q_padraoCADASTRO: TDateField;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBNome: TDBEdit;
+    Label3: TLabel;
+    DBSenha: TDBEdit;
+    Label4: TLabel;
+    Label5: TLabel;
+    DBCadastro: TDBEdit;
+    DBTipo: TDBComboBox;
+    procedure btn_NovoClick(Sender: TObject);
+    procedure btn_GravarClick(Sender: TObject);
+    procedure btn_CancelarClick(Sender: TObject);
+    procedure TrataCampos();
+    procedure btn_EditarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_Usuario: Tfrm_Usuario;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tfrm_Usuario.btn_CancelarClick(Sender: TObject);
+begin
+  inherited;
+//  TrataCampos;
+end;
+
+procedure Tfrm_Usuario.btn_EditarClick(Sender: TObject);
+begin
+  inherited;
+//  TrataCampos;
+  DBNome.SetFocus;
+end;
+
+procedure Tfrm_Usuario.btn_GravarClick(Sender: TObject);
+begin
+  inherited;
+//  TrataCampos;
+end;
+
+procedure Tfrm_Usuario.btn_NovoClick(Sender: TObject);
+var prox : integer;
+begin
+  inherited;
+
+  q_padrao.Active := true;
+  q_padrao.Last;
+  prox := q_padraoID_USUARIO.AsInteger + 1;
+  q_padrao.Append;
+  q_padraoID_USUARIO.AsInteger := prox;
+
+  DBCadastro.Text := DateToStr(now);
+//  TrataCampos;
+  DBNome.SetFocus;
+
+end;
+
+procedure Tfrm_Usuario.TrataCampos;
+begin
+  DBNome.Enabled := not DBNome.Enabled;
+  DBSenha.Enabled := not DBSenha.Enabled;
+  DBTipo.Enabled := not DBTipo.Enabled;
+end;
+
+end.

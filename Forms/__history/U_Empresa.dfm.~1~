@@ -1,0 +1,29 @@
+inherited frm_Padrao1: Tfrm_Padrao1
+  Caption = 'frm_Padrao1'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel2: TPanel
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+  inherited q_padrao: TFDQuery
+    SQL.Strings = (
+      'SELECT '
+      '   ID_EMPRESA,'
+      '   RAZAO_SOCIAL,'
+      '   N_FANTASIA,'
+      '   ENDERECO,'
+      '   NUMERO,'
+      '   BAIRRO,'
+      '   CIDADE,'
+      '   UF,'
+      '   CEP,'
+      '   TELEFONE,'
+      '   CNPJ,'
+      '   EMAIL,'
+      '   LOGO,'
+      '   CADASTRO'
+      'FROM EMPRESA')
+  end
+end
