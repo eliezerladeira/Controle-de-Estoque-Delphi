@@ -11,7 +11,7 @@ type
   Tfrm_Principal = class(TForm)
     Panel1: TPanel;
     btnUsuario: TSpeedButton;
-    SpeedButton2: TSpeedButton;
+    btnEmpresa: TSpeedButton;
     SpeedButton3: TSpeedButton;
     SpeedButton4: TSpeedButton;
     SpeedButton5: TSpeedButton;
@@ -45,6 +45,10 @@ type
     procedure SpeedButton10Click(Sender: TObject);
     procedure btnUsuarioClick(Sender: TObject);
     procedure AbreTelaUsuario();
+    procedure btnEmpresaClick(Sender: TObject);
+    procedure AbreTelaEmpresa();
+    procedure Usurio1Click(Sender: TObject);
+    procedure Empresa1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,7 +62,7 @@ implementation
 
 {$R *.dfm}
 
-uses U_Usuario;
+uses U_Usuario, U_Empresa;
 
 procedure Tfrm_Principal.AbreTelaUsuario;
 begin
@@ -73,9 +77,27 @@ begin
   end;
 end;
 
+procedure Tfrm_Principal.AbreTelaEmpresa;
+begin
+  frm_Empresa := Tfrm_Empresa.Create(self);
+  frm_Empresa.ShowModal;
+  try
+
+  finally
+    // esvazia a memória
+    frm_Empresa.Free;
+    frm_Empresa := nil;
+  end;
+end;
+
 procedure Tfrm_Principal.btnUsuarioClick(Sender: TObject);
 begin
   AbreTelaUsuario;
+end;
+
+procedure Tfrm_Principal.Empresa1Click(Sender: TObject);
+begin
+  AbreTelaEmpresa
 end;
 
 procedure Tfrm_Principal.SpeedButton10Click(Sender: TObject);
@@ -90,12 +112,22 @@ begin
   close;
 end;
 
+procedure Tfrm_Principal.btnEmpresaClick(Sender: TObject);
+begin
+  AbreTelaEmpresa;
+end;
+
 procedure Tfrm_Principal.Timer1Timer(Sender: TObject);
 begin
   // insere dados no status bar
   StatusBar1.Panels[0].Text := DateTostr(now);
   StatusBar1.Panels[1].Text := TimeTostr(now);
   StatusBar1.Panels[2].Text := 'Seja bem vindo ao sistema ';
+end;
+
+procedure Tfrm_Principal.Usurio1Click(Sender: TObject);
+begin
+  AbreTelaUsuario;
 end;
 
 end.

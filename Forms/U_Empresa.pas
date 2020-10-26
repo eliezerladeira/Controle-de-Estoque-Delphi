@@ -47,16 +47,19 @@ type
     Label10: TLabel;
     DBEdit10: TDBEdit;
     Label11: TLabel;
-    DBEdit11: TDBEdit;
+    DBCNPJ: TDBEdit;
     Label12: TLabel;
     DBEdit12: TDBEdit;
     Label13: TLabel;
     DBImage1: TDBImage;
     Label14: TLabel;
     DBCadastro: TDBEdit;
-    Button1: TButton;
-    Button2: TButton;
+    btFoto: TBitBtn;
+    btClear: TBitBtn;
+    OpenDialog1: TOpenDialog;
     procedure btn_NovoClick(Sender: TObject);
+    procedure btFotoClick(Sender: TObject);
+    procedure btClearClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -70,11 +73,30 @@ implementation
 
 {$R *.dfm}
 
+procedure Tfrm_Empresa.btClearClick(Sender: TObject);
+begin
+  // limpa a foto
+  q_padrao.Edit;
+  q_padraoLOGO.AsVariant := null;
+  q_padrao.Refresh;
+  MessageDlg('Imagem deletada com sucesso!', mtInformation, [mbOk], 0);
+end;
+
+procedure Tfrm_Empresa.btFotoClick(Sender: TObject);
+begin
+  // insere foto
+  q_padrao.Edit;
+  OpenDialog1.Execute;
+  DBImage1.Picture.LoadFromFile(OpenDialog1.FileName);
+  q_padrao.Refresh;
+  MessageDlg('Imagem inserida com sucesso!', mtInformation, [mbOk], 0);
+end;
+
 procedure Tfrm_Empresa.btn_NovoClick(Sender: TObject);
 begin
   inherited;
   DBCadastro.Text := DateToStr(now);
-  DBRazaoSocial.SetFocus;
+  DBCNPJ.SetFocus;
 end;
 
 end.

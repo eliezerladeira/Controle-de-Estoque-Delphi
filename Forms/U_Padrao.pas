@@ -110,7 +110,12 @@ begin
     MessageDlg('Registro salvo com sucesso!', mtInformation, [mbOk], 0);
     TrataBotoes;
   except
-    ShowMessage('Erro na gravação dos dados. Verifique!');
+//    ShowMessage('Erro na gravação dos dados. Verifique!');
+on E: Exception do
+  begin
+    ShowMessage('Erro: ' + E.Message );
+   Close;
+  end;
   end;
 end;
 
