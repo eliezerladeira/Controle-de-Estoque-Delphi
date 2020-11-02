@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2020/10/03 15:14:03.000.608,=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/10/03 15:18:37.000.209,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Principal.pas=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2020/10/03 15:18:37.000.209,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Principal.dfm=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/10/03 15:18:37.000.209,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_Principal.pas=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2020/10/03 15:19:41.000.148,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Controle_Estoque.dproj=C:\Users\eliez\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2020/10/03 16:14:09.000.287,=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.pas</Transaction>
     <Transaction>2020/10/03 16:15:07.000.691,C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Forms\U_DM.dfm=C:\Users\eliez\OneDrive\Projetos\Delphi\Estoque\Projeto\Unit1.dfm</Transaction>
@@ -23,5 +23,8 @@
     <Transaction>2020/11/01 17:14:36.847,=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.pas</Transaction>
     <Transaction>2020/11/01 17:15:29.736,C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Forms\U_Fornecedor.dfm=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.dfm</Transaction>
     <Transaction>2020/11/01 17:15:29.736,C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Forms\U_Fornecedor.pas=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.pas</Transaction>
+    <Transaction>2020/11/01 18:01:36.675,=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.pas</Transaction>
+    <Transaction>2020/11/01 19:08:42.295,C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Forms\U_Produto.pas=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.pas</Transaction>
+    <Transaction>2020/11/01 19:08:42.297,C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Forms\U_Produto.dfm=C:\Users\eliez\OneDrive\Projetos\Controle-de-Estoque-Delphi\Projeto\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

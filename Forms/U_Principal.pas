@@ -55,6 +55,9 @@ type
     procedure SpeedButton4Click(Sender: TObject);
     procedure AbreTelaFornecedor();
     procedure Fornecedores1Click(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
+    procedure AbreTelaProduto();
+    procedure Produtos1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -68,7 +71,7 @@ implementation
 
 {$R *.dfm}
 
-uses U_Usuario, U_Empresa, U_Cliente, U_Fornecedor;
+uses U_Usuario, U_Empresa, U_Cliente, U_Fornecedor, U_Produto;
 
 procedure Tfrm_Principal.AbreTelaUsuario;
 begin
@@ -120,6 +123,18 @@ begin
   end;
 end;
 
+procedure Tfrm_Principal.AbreTelaProduto;
+begin
+  frm_Produto := Tfrm_Produto.Create(self);
+  frm_Produto.ShowModal;
+  try
+
+  finally
+    frm_Produto.Free;
+    frm_Produto := nil;
+  end;
+end;
+
 procedure Tfrm_Principal.btnUsuarioClick(Sender: TObject);
 begin
   AbreTelaUsuario;
@@ -140,6 +155,11 @@ begin
   AbreTelaFornecedor;
 end;
 
+procedure Tfrm_Principal.Produtos1Click(Sender: TObject);
+begin
+  AbreTelaProduto;
+end;
+
 procedure Tfrm_Principal.SpeedButton10Click(Sender: TObject);
 begin
   if MessageDlg('Deseja sair do sistema?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
@@ -155,6 +175,11 @@ end;
 procedure Tfrm_Principal.SpeedButton4Click(Sender: TObject);
 begin
   AbreTelaFornecedor;
+end;
+
+procedure Tfrm_Principal.SpeedButton5Click(Sender: TObject);
+begin
+  AbreTelaProduto;
 end;
 
 procedure Tfrm_Principal.btnClienteClick(Sender: TObject);
