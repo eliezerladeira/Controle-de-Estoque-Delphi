@@ -58,6 +58,9 @@ type
     procedure SpeedButton5Click(Sender: TObject);
     procedure AbreTelaProduto();
     procedure Produtos1Click(Sender: TObject);
+    procedure SpeedButton6Click(Sender: TObject);
+    procedure AbreTelaFormaPagamento();
+    procedure FormasdePagamento1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,7 +74,7 @@ implementation
 
 {$R *.dfm}
 
-uses U_Usuario, U_Empresa, U_Cliente, U_Fornecedor, U_Produto;
+uses U_Usuario, U_Empresa, U_Cliente, U_Fornecedor, U_Produto, U_FormaPgto;
 
 procedure Tfrm_Principal.AbreTelaUsuario;
 begin
@@ -108,6 +111,18 @@ begin
     // esvazia a memória
     frm_Empresa.Free;
     frm_Empresa := nil;
+  end;
+end;
+
+procedure Tfrm_Principal.AbreTelaFormaPagamento;
+begin
+  frm_FormaPgto := Tfrm_FormaPgto.Create(self);
+  frm_FormaPgto.ShowModal;
+  try
+
+  finally
+    frm_FormaPgto.Free;
+    frm_FormaPgto := nil;
   end;
 end;
 
@@ -150,6 +165,11 @@ begin
   AbreTelaEmpresa
 end;
 
+procedure Tfrm_Principal.FormasdePagamento1Click(Sender: TObject);
+begin
+  AbreTelaFormaPagamento;
+end;
+
 procedure Tfrm_Principal.Fornecedores1Click(Sender: TObject);
 begin
   AbreTelaFornecedor;
@@ -180,6 +200,11 @@ end;
 procedure Tfrm_Principal.SpeedButton5Click(Sender: TObject);
 begin
   AbreTelaProduto;
+end;
+
+procedure Tfrm_Principal.SpeedButton6Click(Sender: TObject);
+begin
+  AbreTelaFormaPagamento;
 end;
 
 procedure Tfrm_Principal.btnClienteClick(Sender: TObject);
