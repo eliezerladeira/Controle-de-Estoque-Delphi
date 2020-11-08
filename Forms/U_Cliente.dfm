@@ -5,98 +5,170 @@ inherited frm_Cliente: Tfrm_Cliente
   object Label1: TLabel [0]
     Left = 40
     Top = 80
-    Width = 33
+    Width = 38
     Height = 13
     Caption = 'C'#243'digo'
     FocusControl = DBEdit1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label2: TLabel [1]
     Left = 138
     Top = 125
-    Width = 27
+    Width = 32
     Height = 13
     Caption = 'Nome'
     FocusControl = DBEdit2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label3: TLabel [2]
     Left = 138
     Top = 171
-    Width = 45
+    Width = 52
     Height = 13
     Caption = 'Endere'#231'o'
     FocusControl = DBEdit3
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label4: TLabel [3]
     Left = 688
     Top = 171
-    Width = 37
+    Width = 44
     Height = 13
     Caption = 'N'#250'mero'
     FocusControl = DBEdit4
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label5: TLabel [4]
     Left = 40
     Top = 216
-    Width = 28
+    Width = 34
     Height = 13
     Caption = 'Bairro'
     FocusControl = DBEdit5
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Cidade: TLabel [5]
     Left = 356
     Top = 216
-    Width = 33
+    Width = 38
     Height = 13
     Caption = 'Cidade'
     FocusControl = DBEdit6
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label7: TLabel [6]
     Left = 708
     Top = 216
-    Width = 13
+    Width = 14
     Height = 13
     Caption = 'UF'
     FocusControl = DBEdit7
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label8: TLabel [7]
     Left = 40
     Top = 171
-    Width = 19
+    Width = 20
     Height = 13
     Caption = 'CEP'
     FocusControl = DBEdit8
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Telefone: TLabel [8]
     Left = 40
     Top = 264
-    Width = 42
+    Width = 49
     Height = 13
     Caption = 'Telefone'
     FocusControl = DBEdit9
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label10: TLabel [9]
     Left = 40
     Top = 125
-    Width = 31
+    Width = 29
     Height = 13
     Caption = 'C.P.F.'
     FocusControl = DBCPF
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label11: TLabel [10]
     Left = 138
     Top = 264
-    Width = 28
+    Width = 35
     Height = 13
     Caption = 'E-mail'
     FocusControl = DBEdit11
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label12: TLabel [11]
     Left = 40
     Top = 312
-    Width = 70
+    Width = 81
     Height = 13
     Caption = 'Data Cadastro'
     FocusControl = DBCadastro
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   inherited Panel1: TPanel
     TabOrder = 12
@@ -244,6 +316,7 @@ inherited frm_Cliente: Tfrm_Cliente
       FieldName = 'ID_CLIENTE'
       Origin = 'ID_CLIENTE'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object q_padraoNOME: TStringField
       FieldName = 'NOME'

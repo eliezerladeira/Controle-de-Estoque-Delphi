@@ -79,9 +79,6 @@ inherited frm_Usuario: Tfrm_Usuario
     Width = 793
     TabOrder = 5
     ExplicitWidth = 793
-    inherited btn_Pesquisar: TBitBtn
-      OnClick = btn_PesquisarClick
-    end
   end
   inherited Panel2: TPanel
     Top = 295

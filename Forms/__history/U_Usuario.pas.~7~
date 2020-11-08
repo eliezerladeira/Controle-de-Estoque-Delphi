@@ -32,7 +32,6 @@ type
     procedure btn_CancelarClick(Sender: TObject);
     procedure TrataCampos();
     procedure btn_EditarClick(Sender: TObject);
-    procedure btn_PesquisarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,8 +44,6 @@ var
 implementation
 
 {$R *.dfm}
-
-uses U_PesquisaUsuario;
 
 procedure Tfrm_Usuario.btn_CancelarClick(Sender: TObject);
 begin
@@ -82,18 +79,6 @@ begin
 //  TrataCampos;
   DBNome.SetFocus;
 
-end;
-
-procedure Tfrm_Usuario.btn_PesquisarClick(Sender: TObject);
-begin
-  frmPesquisaUsuarios := TfrmPesquisaUsuarios.Create(self);
-  frmPesquisaUsuarios.ShowModal;
-  try
-
-  finally
-    frmPesquisaUsuarios.Free;
-    frmPesquisaUsuarios := nil;
-  end;
 end;
 
 procedure Tfrm_Usuario.TrataCampos;

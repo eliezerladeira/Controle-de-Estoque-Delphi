@@ -18,9 +18,9 @@ type
     txtNome: TEdit;
     mskInicio: TMaskEdit;
     mskFim: TMaskEdit;
-    lblNome: TLabel;
-    lblInicio: TLabel;
-    lblFim: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
     DBGrid1: TDBGrid;
     Panel2: TPanel;
     btPesquisa: TBitBtn;
@@ -28,7 +28,6 @@ type
     btImprimir: TBitBtn;
     qPesqPadrao: TFDQuery;
     dtsPesqPadrao: TDataSource;
-    procedure cmbChavePesquisaChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,44 +42,5 @@ implementation
 {$R *.dfm}
 
 uses U_DM;
-
-procedure TfrmPesquisaPadrao.cmbChavePesquisaChange(Sender: TObject);
-begin
-  case cmbChavePesquisa.ItemIndex of
-    0:begin
-      txtNome.Enabled := True;
-      txtNome.SetFocus;
-      mskInicio.Enabled := False;
-      mskFim.Enabled := False;
-      lblNome.Caption := 'Digite o código';
-    end;
-
-    1:begin
-      txtNome.Enabled := True;
-      txtNome.SetFocus;
-      mskInicio.Enabled := False;
-      mskFim.Enabled := False;
-      lblNome.Caption := 'Digite o nome';
-    end;
-
-    2:begin
-      txtNome.Enabled := False;
-      mskInicio.Enabled := True;
-      mskFim.Enabled := False;
-      mskInicio.SetFocus;
-      lblNome.Caption := 'Data';
-    end;
-
-    3:begin
-      txtNome.Enabled := False;
-      mskInicio.Enabled := True;
-      mskFim.Enabled := True;
-      mskInicio.SetFocus;
-      lblNome.Caption := 'Data início';
-    end;
-
-  end;
-
-end;
 
 end.

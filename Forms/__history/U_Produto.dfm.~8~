@@ -1,145 +1,86 @@
 inherited frm_Produto: Tfrm_Produto
   Caption = 'Cadastro de Produtos'
+  ExplicitTop = -59
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
     Left = 17
     Top = 72
-    Width = 38
+    Width = 33
     Height = 13
     Caption = 'C'#243'digo'
     FocusControl = DBCodigo
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label2: TLabel [1]
     Left = 17
     Top = 120
-    Width = 45
+    Width = 38
     Height = 13
     Caption = 'Produto'
     FocusControl = DBProduto
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label3: TLabel [2]
     Left = 17
     Top = 168
-    Width = 81
+    Width = 70
     Height = 13
     Caption = 'Valor de Custo'
     FocusControl = DBVlCusto
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label4: TLabel [3]
     Left = 168
     Top = 168
-    Width = 84
+    Width = 72
     Height = 13
     Caption = 'Valor de Venda'
     FocusControl = DBVlVenda
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label5: TLabel [4]
     Left = 324
     Top = 168
-    Width = 100
+    Width = 85
     Height = 13
     Caption = 'Saldo em Estoque'
     FocusControl = DBEstoque
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label6: TLabel [5]
     Left = 480
     Top = 168
-    Width = 89
+    Width = 74
     Height = 13
     Caption = 'Estoque M'#237'nimo'
     FocusControl = DBEstoqueMin
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label7: TLabel [6]
     Left = 636
     Top = 168
-    Width = 46
+    Width = 39
     Height = 13
     Caption = 'Unidade'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label8: TLabel [7]
     Left = 652
     Top = 72
-    Width = 98
+    Width = 85
     Height = 13
     Caption = 'Data de Cadastro'
     FocusControl = DBCadastro
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label9: TLabel [8]
     Left = 17
     Top = 216
-    Width = 91
+    Width = 81
     Height = 13
     Caption = 'C'#243'd. Fornecedor'
     FocusControl = DBCodFornecedor
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label10: TLabel [9]
     Left = 106
     Top = 216
-    Width = 64
+    Width = 55
     Height = 13
     Caption = 'Fornecedor'
     FocusControl = DBFornecedor
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   inherited Panel1: TPanel
     TabOrder = 10

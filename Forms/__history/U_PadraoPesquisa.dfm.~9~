@@ -81,7 +81,6 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
       Width = 105
       Height = 21
       TabOrder = 0
-      OnChange = cmbChavePesquisaChange
       Items.Strings = (
         'C'#243'digo'
         'Nome'

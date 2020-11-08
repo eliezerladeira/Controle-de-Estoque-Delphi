@@ -1,48 +1,31 @@
 inherited frm_FormaPgto: Tfrm_FormaPgto
   Caption = 'Cadastro de Formas de Pagamento'
+  ExplicitTop = -186
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
     Left = 48
     Top = 112
-    Width = 38
+    Width = 33
     Height = 13
     Caption = 'C'#243'digo'
     FocusControl = DBCodigo
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label2: TLabel [1]
     Left = 48
     Top = 152
-    Width = 55
+    Width = 46
     Height = 13
     Caption = 'Descri'#231#227'o'
     FocusControl = DBDescricao
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label3: TLabel [2]
     Left = 48
     Top = 192
-    Width = 51
+    Width = 44
     Height = 13
     Caption = 'Cadastro'
     FocusControl = DBCadastro
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   inherited Panel2: TPanel
     inherited DBNavigator1: TDBNavigator

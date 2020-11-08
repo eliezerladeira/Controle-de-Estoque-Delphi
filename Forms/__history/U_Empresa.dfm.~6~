@@ -1,202 +1,119 @@
 inherited frm_Empresa: Tfrm_Empresa
   Caption = 'Cadastro de Empresas'
+  ExplicitTop = -83
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
     Left = 8
     Top = 60
-    Width = 38
+    Width = 33
     Height = 13
     Caption = 'C'#243'digo'
     FocusControl = DBEdit1
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label2: TLabel [1]
     Left = 8
     Top = 160
-    Width = 71
+    Width = 60
     Height = 13
     Caption = 'Raz'#227'o Social'
     FocusControl = DBRazaoSocial
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label3: TLabel [2]
     Left = 498
     Top = 160
-    Width = 83
+    Width = 71
     Height = 13
     Caption = 'Nome Fantasia'
     FocusControl = DBEdit3
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label4: TLabel [3]
     Left = 119
     Top = 213
-    Width = 52
+    Width = 45
     Height = 13
     Caption = 'Endere'#231'o'
     FocusControl = DBEdit4
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label5: TLabel [4]
     Left = 723
     Top = 213
-    Width = 44
+    Width = 37
     Height = 13
     Caption = 'N'#250'mero'
     FocusControl = DBEdit5
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label6: TLabel [5]
     Left = 8
     Top = 264
-    Width = 34
+    Width = 28
     Height = 13
     Caption = 'Bairro'
     FocusControl = DBEdit6
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label7: TLabel [6]
     Left = 271
     Top = 264
-    Width = 38
+    Width = 33
     Height = 13
     Caption = 'Cidade'
     FocusControl = DBEdit7
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label8: TLabel [7]
     Left = 565
     Top = 264
-    Width = 14
+    Width = 13
     Height = 13
     Caption = 'UF'
     FocusControl = DBEdit8
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label9: TLabel [8]
     Left = 8
     Top = 213
-    Width = 20
+    Width = 19
     Height = 13
     Caption = 'CEP'
     FocusControl = DBEdit9
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label10: TLabel [9]
     Left = 601
     Top = 264
-    Width = 49
+    Width = 42
     Height = 13
     Caption = 'Telefone'
     FocusControl = DBEdit10
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label11: TLabel [10]
     Left = 8
     Top = 112
-    Width = 39
+    Width = 41
     Height = 13
     Caption = 'C.N.P.J.'
     FocusControl = DBCNPJ
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label12: TLabel [11]
     Left = 8
     Top = 312
-    Width = 35
+    Width = 28
     Height = 13
     Caption = 'E-mail'
     FocusControl = DBEdit12
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label13: TLabel [12]
     Left = 681
     Top = 312
-    Width = 49
+    Width = 41
     Height = 13
     Caption = 'Logotipo'
     FocusControl = DBImage1
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   object Label14: TLabel [13]
     Left = 8
     Top = 364
-    Width = 81
+    Width = 70
     Height = 13
     Caption = 'Data Cadastro'
     FocusControl = DBCadastro
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsUnderline]
-    ParentFont = False
   end
   inherited Panel1: TPanel
     TabOrder = 14

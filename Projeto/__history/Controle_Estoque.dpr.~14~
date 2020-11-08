@@ -11,8 +11,7 @@ uses
   U_Fornecedor in '..\Forms\U_Fornecedor.pas' {frm_Fornecedor},
   U_Produto in '..\Forms\U_Produto.pas' {frm_Produto},
   U_FormaPgto in '..\Forms\U_FormaPgto.pas' {frm_FormaPgto},
-  U_PadraoPesquisa in '..\Forms\U_PadraoPesquisa.pas' {frmPesquisaPadrao},
-  U_PesquisaUsuario in '..\Forms\U_PesquisaUsuario.pas' {frmPesquisaUsuarios};
+  U_PadraoPesquisa in '..\Forms\U_PadraoPesquisa.pas' {frmPesquisaPadrao};
 
 {$R *.res}
 

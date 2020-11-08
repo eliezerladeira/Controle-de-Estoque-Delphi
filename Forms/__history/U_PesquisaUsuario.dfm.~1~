@@ -1,0 +1,7 @@
+inherited frmPesquisaUsuarios: TfrmPesquisaUsuarios
+  Caption = 'Pesquisa de Usu'#225'rios'
+  ExplicitWidth = 800
+  ExplicitHeight = 600
+  PixelsPerInch = 96
+  TextHeight = 13
+end

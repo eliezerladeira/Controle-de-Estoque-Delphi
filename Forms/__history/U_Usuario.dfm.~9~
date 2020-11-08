@@ -9,79 +9,46 @@ inherited frm_Usuario: Tfrm_Usuario
   object Label1: TLabel [0]
     Left = 18
     Top = 72
-    Width = 38
+    Width = 33
     Height = 13
     Caption = 'C'#243'digo'
     FocusControl = DBEdit1
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label2: TLabel [1]
     Left = 18
     Top = 112
-    Width = 32
+    Width = 27
     Height = 13
     Caption = 'Nome'
     FocusControl = DBNome
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label3: TLabel [2]
     Left = 18
     Top = 152
-    Width = 35
+    Width = 30
     Height = 13
     Caption = 'Senha'
     FocusControl = DBSenha
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label4: TLabel [3]
     Left = 18
     Top = 192
-    Width = 24
+    Width = 20
     Height = 13
     Caption = 'Tipo'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   object Label5: TLabel [4]
     Left = 538
     Top = 72
-    Width = 51
+    Width = 44
     Height = 13
     Caption = 'Cadastro'
     FocusControl = DBCadastro
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
   end
   inherited Panel1: TPanel
     Width = 793
     TabOrder = 5
     ExplicitWidth = 793
-    inherited btn_Pesquisar: TBitBtn
-      OnClick = btn_PesquisarClick
-    end
   end
   inherited Panel2: TPanel
     Top = 295
