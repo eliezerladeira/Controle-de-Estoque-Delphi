@@ -10,8 +10,10 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
   WindowState = wsMaximized
+  OnKeyPress = FormKeyPress
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -85,7 +87,6 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
       Items.Strings = (
         'C'#243'digo'
         'Nome'
-        'Descri'#231#227'o'
         'Cadastro'
         'Per'#237'odo')
     end

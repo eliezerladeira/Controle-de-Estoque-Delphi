@@ -3,9 +3,6 @@ inherited frmPesquisaUsuarios: TfrmPesquisaUsuarios
   PixelsPerInch = 96
   TextHeight = 13
   inherited Panel1: TPanel
-    inherited cmbChavePesquisa: TComboBox
-      OnChange = cmbChavePesquisaChange
-    end
     inherited btPesquisa: TBitBtn
       OnClick = btPesquisaClick
     end

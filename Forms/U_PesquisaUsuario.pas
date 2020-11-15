@@ -41,13 +41,24 @@ begin
 
   case cmbChavePesquisa.ItemIndex of
     0:begin
-      qPesqPadrao.SQL.Add('WHERE ID_USUARIO =: PID_USUARIO');
-      qPesqPadrao.ParamByName('PID_USUARIO').AsString := txtNome.Text;
+      Qpesqpadrao.SQL.Add('WHERE ID_USUARIO =:PID_USUARIO'); // criamos o parametro
+      Qpesqpadrao.ParamByName('PID_USUARIO').AsString := txtnome.Text; // aponta para o campo do parametro
     end;
 
     1:begin
-      qPesqPadrao.SQL.Add('WHERE NOME LIKE : PNOME');
+      qPesqPadrao.SQL.Add('WHERE NOME LIKE :PNOME');
       qPesqPadrao.ParamByName('PNOME').AsString := '%' + txtNome.Text + '%';
+    end;
+
+    2:begin
+      qPesqPadrao.SQL.Add('WHERE CADASTRO =:PCADASTRO');
+      qPesqPadrao.ParamByName('PCADASTRO').AsDate := StrToDate(mskInicio.Text);
+    end;
+
+    3:begin
+      qPesqPadrao.SQL.Add('WHERE CADASTRO BETWEEN =:PINICIO AND =:PFIM');
+      qPesqPadrao.ParamByName('PINICIO').AsDate := StrToDate(mskInicio.Text);
+      qPesqPadrao.ParamByName('PFIM').AsDate := StrToDate(mskFim.Text);
     end;
   end;
 

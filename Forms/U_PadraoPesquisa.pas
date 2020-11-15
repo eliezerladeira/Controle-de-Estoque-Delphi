@@ -29,6 +29,7 @@ type
     qPesqPadrao: TFDQuery;
     dtsPesqPadrao: TDataSource;
     procedure cmbChavePesquisaChange(Sender: TObject);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -68,7 +69,7 @@ begin
       mskInicio.Enabled := True;
       mskFim.Enabled := False;
       mskInicio.SetFocus;
-      lblNome.Caption := 'Data';
+      lblInicio.Caption := 'Data';
     end;
 
     3:begin
@@ -76,11 +77,20 @@ begin
       mskInicio.Enabled := True;
       mskFim.Enabled := True;
       mskInicio.SetFocus;
-      lblNome.Caption := 'Data início';
+      lblInicio.Caption := 'Data início';
     end;
 
   end;
 
+end;
+
+procedure TfrmPesquisaPadrao.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  if key = #13 then
+  begin
+    Key := #0;
+    Perform(WM_NEXTDLGCTL, 0, 0);
+  end;
 end;
 
 end.
