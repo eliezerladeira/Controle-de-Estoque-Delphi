@@ -54,6 +54,7 @@ begin
       mskInicio.Enabled := False;
       mskFim.Enabled := False;
       lblNome.Caption := 'Digite o código';
+      txtNome.Clear
     end;
 
     1:begin
@@ -62,6 +63,7 @@ begin
       mskInicio.Enabled := False;
       mskFim.Enabled := False;
       lblNome.Caption := 'Digite o nome';
+      txtNome.Clear;
     end;
 
     2:begin
@@ -70,6 +72,7 @@ begin
       mskFim.Enabled := False;
       mskInicio.SetFocus;
       lblInicio.Caption := 'Data';
+      mskInicio.Clear;
     end;
 
     3:begin
@@ -78,6 +81,8 @@ begin
       mskFim.Enabled := True;
       mskInicio.SetFocus;
       lblInicio.Caption := 'Data início';
+      mskInicio.Clear;
+      mskFim.Clear;
     end;
 
   end;

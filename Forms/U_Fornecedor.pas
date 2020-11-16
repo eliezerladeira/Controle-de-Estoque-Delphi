@@ -49,6 +49,7 @@ type
     Label12: TLabel;
     DBCadastro: TDBEdit;
     procedure btn_NovoClick(Sender: TObject);
+    procedure btn_PesquisarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -62,11 +63,25 @@ implementation
 
 {$R *.dfm}
 
+uses U_PesquisaFornecedor;
+
 procedure Tfrm_Fornecedor.btn_NovoClick(Sender: TObject);
 begin
   inherited;
   DBCadastro.Text := DateToStr(Now);
   DBCNPJ.SetFocus;
+end;
+
+procedure Tfrm_Fornecedor.btn_PesquisarClick(Sender: TObject);
+begin
+  frmPesquisaFornecedor := TfrmPesquisaFornecedor.Create(self);
+  frmPesquisaFornecedor.ShowModal;
+  try
+
+  finally
+    frmPesquisaFornecedor.Free;
+    frmPesquisaFornecedor := nil;
+  end;
 end;
 
 end.

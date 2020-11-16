@@ -13,7 +13,8 @@ uses
   U_FormaPgto in '..\Forms\U_FormaPgto.pas' {frm_FormaPgto},
   U_PadraoPesquisa in '..\Forms\U_PadraoPesquisa.pas' {frmPesquisaPadrao},
   U_PesquisaUsuario in '..\Forms\U_PesquisaUsuario.pas' {frmPesquisaUsuarios},
-  U_PesquisaCliente in '..\Forms\U_PesquisaCliente.pas' {frmPesquisaCliente};
+  U_PesquisaCliente in '..\Forms\U_PesquisaCliente.pas' {frmPesquisaCliente},
+  U_PesquisaFornecedor in '..\Forms\U_PesquisaFornecedor.pas' {frmPesquisaFornecedor};
 
 {$R *.res}
 

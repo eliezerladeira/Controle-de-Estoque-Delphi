@@ -172,6 +172,9 @@ inherited frm_Fornecedor: Tfrm_Fornecedor
   end
   inherited Panel1: TPanel
     TabOrder = 12
+    inherited btn_Pesquisar: TBitBtn
+      OnClick = btn_PesquisarClick
+    end
   end
   inherited Panel2: TPanel
     TabOrder = 13

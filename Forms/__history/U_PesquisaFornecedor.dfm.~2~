@@ -1,0 +1,28 @@
+inherited frmPesquisaFornecedor: TfrmPesquisaFornecedor
+  Caption = 'Pesquisa de Fornecedores'
+  ExplicitWidth = 800
+  ExplicitHeight = 600
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited DBGrid1: TDBGrid
+    DataSource = dtsPesqPadrao
+  end
+  inherited qPesqPadrao: TFDQuery
+    SQL.Strings = (
+      'SELECT '
+      '   id_fornecedor, '
+      '   nome,'
+      '   endereco,'
+      '   numero,'
+      '   bairro,'
+      '   cidade,'
+      '   uf,'
+      '   cep,'
+      '   telefone,'
+      '   cnpj,'
+      '   email,'
+      '   cadastro'
+      'from fornecedor'
+      'order by id_fornecedor')
+  end
+end
