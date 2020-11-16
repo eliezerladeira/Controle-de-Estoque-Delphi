@@ -13,7 +13,7 @@ uses
   U_FormaPgto in '..\Forms\U_FormaPgto.pas' {frm_FormaPgto},
   U_PadraoPesquisa in '..\Forms\U_PadraoPesquisa.pas' {frmPesquisaPadrao},
   U_PesquisaUsuario in '..\Forms\U_PesquisaUsuario.pas' {frmPesquisaUsuarios},
-  U_PesquisaCliente in '..\Forms\U_PesquisaCliente.pas' {frmPesquisaCliente};
+  U_PesquisaCliente in '..\Forms\U_PesquisaCliente.pas' {frmPesquisaPadrao1};
 
 {$R *.res}
 
@@ -22,5 +22,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(Tfrm_Principal, frm_Principal);
   Application.CreateForm(TDM, DM);
+  Application.CreateForm(TfrmPesquisaPadrao1, frmPesquisaPadrao1);
   Application.Run;
 end.
