@@ -30,6 +30,7 @@ type
     dtsPesqPadrao: TDataSource;
     procedure cmbChavePesquisaChange(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -85,8 +86,23 @@ begin
       mskFim.Clear;
     end;
 
+    4:begin
+      txtNome.Enabled := True;
+      txtNome.SetFocus;
+      mskInicio.Enabled := False;
+      mskFim.Enabled := False;
+      lblNome.Caption := 'Digite o código do fornecedor';
+      txtNome.Clear
+    end;
+
   end;
 
+end;
+
+procedure TfrmPesquisaPadrao.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  qPesqPadrao.Close;
 end;
 
 procedure TfrmPesquisaPadrao.FormKeyPress(Sender: TObject; var Key: Char);

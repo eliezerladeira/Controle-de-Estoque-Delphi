@@ -1,5 +1,6 @@
 inherited frm_Produto: Tfrm_Produto
   Caption = 'Cadastro de Produtos'
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
@@ -143,6 +144,9 @@ inherited frm_Produto: Tfrm_Produto
   end
   inherited Panel1: TPanel
     TabOrder = 10
+    inherited btn_Pesquisar: TBitBtn
+      OnClick = btn_PesquisarClick
+    end
   end
   inherited Panel2: TPanel
     TabOrder = 11

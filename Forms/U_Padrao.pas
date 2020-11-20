@@ -34,6 +34,7 @@ type
     procedure btn_AtualizarClick(Sender: TObject);
     procedure TrataBotoes();
     procedure btnSairClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -125,6 +126,11 @@ begin
   TrataBotoes;
   q_padrao.Open;
   q_padrao.Append;
+end;
+
+procedure Tfrm_Padrao.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  q_padrao.Close;
 end;
 
 procedure Tfrm_Padrao.FormKeyPress(Sender: TObject; var Key: Char);
