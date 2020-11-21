@@ -77,7 +77,11 @@ begin
   frmPesquisaFornecedor := TfrmPesquisaFornecedor.Create(self);
   frmPesquisaFornecedor.ShowModal;
   try
-
+    if frmPesquisaFornecedor.codigo > 0 then
+      begin
+        q_padrao.Open();
+        q_padrao.Locate('ID_FORNECEDOR', frmPesquisaFornecedor.codigo, []);
+      end;
   finally
     frmPesquisaFornecedor.Free;
     frmPesquisaFornecedor := nil;

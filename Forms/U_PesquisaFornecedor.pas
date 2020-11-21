@@ -12,7 +12,20 @@ uses
 
 type
   TfrmPesquisaFornecedor = class(TfrmPesquisaPadrao)
+    qPesqPadraoID_FORNECEDOR: TIntegerField;
+    qPesqPadraoNOME: TStringField;
+    qPesqPadraoENDERECO: TStringField;
+    qPesqPadraoNUMERO: TIntegerField;
+    qPesqPadraoBAIRRO: TStringField;
+    qPesqPadraoCIDADE: TStringField;
+    qPesqPadraoUF: TStringField;
+    qPesqPadraoCEP: TStringField;
+    qPesqPadraoTELEFONE: TStringField;
+    qPesqPadraoCNPJ: TStringField;
+    qPesqPadraoEMAIL: TStringField;
+    qPesqPadraoCADASTRO: TDateField;
     procedure btPesquisaClick(Sender: TObject);
+    procedure btTransferirClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,6 +80,16 @@ begin
   else
     abort;
 
+end;
+
+procedure TfrmPesquisaFornecedor.btTransferirClick(Sender: TObject);
+begin
+  if qPesqPadrao.RecordCount > 0 then
+    begin
+      codigo := qPesqPadraoID_FORNECEDOR.AsInteger;
+    end
+  else
+  abort;
 end;
 
 end.
