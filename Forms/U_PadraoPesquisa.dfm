@@ -550,6 +550,7 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnDblClick = DBGrid1DblClick
   end
   object Panel2: TPanel
     Left = 0

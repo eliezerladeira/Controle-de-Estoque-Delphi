@@ -23,7 +23,6 @@ type
     qPesqPadraoNOME: TStringField;
     qPesqPadraoCADASTRO: TDateField;
     procedure btPesquisaClick(Sender: TObject);
-    procedure btTransferirClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -85,16 +84,6 @@ begin
     end
   else
     abort;
-end;
-
-procedure TfrmPesquisaProduto.btTransferirClick(Sender: TObject);
-begin
-  if qPesqPadrao.RecordCount > 0 then
-    begin
-      codigo := qPesqPadraoID_PRODUTO.AsInteger;
-    end
-  else
-  abort;
 end;
 
 end.

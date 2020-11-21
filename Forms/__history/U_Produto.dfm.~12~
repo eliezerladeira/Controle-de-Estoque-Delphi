@@ -1,89 +1,152 @@
 inherited frm_Produto: Tfrm_Produto
   Caption = 'Cadastro de Produtos'
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
     Left = 17
     Top = 72
-    Width = 33
+    Width = 38
     Height = 13
     Caption = 'C'#243'digo'
     FocusControl = DBCodigo
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label2: TLabel [1]
     Left = 17
     Top = 120
-    Width = 38
+    Width = 45
     Height = 13
     Caption = 'Produto'
     FocusControl = DBProduto
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label3: TLabel [2]
     Left = 17
     Top = 168
-    Width = 70
+    Width = 81
     Height = 13
     Caption = 'Valor de Custo'
-    FocusControl = DBEdit3
+    FocusControl = DBVlCusto
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label4: TLabel [3]
     Left = 168
     Top = 168
-    Width = 72
+    Width = 84
     Height = 13
     Caption = 'Valor de Venda'
-    FocusControl = DBEdit4
+    FocusControl = DBVlVenda
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label5: TLabel [4]
     Left = 324
     Top = 168
-    Width = 85
+    Width = 100
     Height = 13
     Caption = 'Saldo em Estoque'
-    FocusControl = DBEdit5
+    FocusControl = DBEstoque
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label6: TLabel [5]
     Left = 480
     Top = 168
-    Width = 74
+    Width = 89
     Height = 13
     Caption = 'Estoque M'#237'nimo'
-    FocusControl = DBEdit6
+    FocusControl = DBEstoqueMin
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label7: TLabel [6]
     Left = 636
     Top = 168
-    Width = 39
+    Width = 46
     Height = 13
     Caption = 'Unidade'
-    FocusControl = DBEdit7
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label8: TLabel [7]
     Left = 652
     Top = 72
-    Width = 85
+    Width = 98
     Height = 13
     Caption = 'Data de Cadastro'
     FocusControl = DBCadastro
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label9: TLabel [8]
     Left = 17
     Top = 216
-    Width = 81
+    Width = 91
     Height = 13
     Caption = 'C'#243'd. Fornecedor'
-    FocusControl = DBEdit9
+    FocusControl = DBCodFornecedor
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label10: TLabel [9]
     Left = 106
     Top = 216
-    Width = 55
+    Width = 64
     Height = 13
     Caption = 'Fornecedor'
-    FocusControl = DBEdit10
+    FocusControl = DBFornecedor
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   inherited Panel1: TPanel
     TabOrder = 10
+    inherited btn_Pesquisar: TBitBtn
+      OnClick = btn_PesquisarClick
+    end
   end
   inherited Panel2: TPanel
     TabOrder = 11
@@ -98,7 +161,6 @@ inherited frm_Produto: Tfrm_Produto
     Height = 21
     DataField = 'ID_PRODUTO'
     DataSource = ds_padrao
-    Enabled = False
     TabOrder = 0
   end
   object DBProduto: TDBEdit [13]
@@ -110,7 +172,7 @@ inherited frm_Produto: Tfrm_Produto
     DataSource = ds_padrao
     TabOrder = 2
   end
-  object DBEdit3: TDBEdit [14]
+  object DBVlCusto: TDBEdit [14]
     Left = 17
     Top = 184
     Width = 145
@@ -119,7 +181,7 @@ inherited frm_Produto: Tfrm_Produto
     DataSource = ds_padrao
     TabOrder = 3
   end
-  object DBEdit4: TDBEdit [15]
+  object DBVlVenda: TDBEdit [15]
     Left = 168
     Top = 184
     Width = 150
@@ -128,7 +190,7 @@ inherited frm_Produto: Tfrm_Produto
     DataSource = ds_padrao
     TabOrder = 4
   end
-  object DBEdit5: TDBEdit [16]
+  object DBEstoque: TDBEdit [16]
     Left = 324
     Top = 184
     Width = 150
@@ -137,7 +199,7 @@ inherited frm_Produto: Tfrm_Produto
     DataSource = ds_padrao
     TabOrder = 5
   end
-  object DBEdit6: TDBEdit [17]
+  object DBEstoqueMin: TDBEdit [17]
     Left = 480
     Top = 184
     Width = 150
@@ -146,16 +208,7 @@ inherited frm_Produto: Tfrm_Produto
     DataSource = ds_padrao
     TabOrder = 6
   end
-  object DBEdit7: TDBEdit [18]
-    Left = 636
-    Top = 184
-    Width = 150
-    Height = 21
-    DataField = 'UNIDADE'
-    DataSource = ds_padrao
-    TabOrder = 7
-  end
-  object DBCadastro: TDBEdit [19]
+  object DBCadastro: TDBEdit [18]
     Left = 652
     Top = 88
     Width = 134
@@ -165,7 +218,7 @@ inherited frm_Produto: Tfrm_Produto
     Enabled = False
     TabOrder = 1
   end
-  object DBEdit9: TDBEdit [20]
+  object DBCodFornecedor: TDBEdit [19]
     Left = 17
     Top = 232
     Width = 83
@@ -174,7 +227,7 @@ inherited frm_Produto: Tfrm_Produto
     DataSource = ds_padrao
     TabOrder = 8
   end
-  object DBEdit10: TDBEdit [21]
+  object DBFornecedor: TDBEdit [20]
     Left = 106
     Top = 232
     Width = 680
@@ -182,6 +235,23 @@ inherited frm_Produto: Tfrm_Produto
     DataField = 'NOME'
     DataSource = ds_padrao
     TabOrder = 9
+  end
+  object cmbUnidade: TDBComboBox [21]
+    Left = 636
+    Top = 184
+    Width = 150
+    Height = 21
+    DataField = 'UNIDADE'
+    DataSource = ds_padrao
+    Items.Strings = (
+      'KG'
+      'ML'
+      'PCT'
+      'PC'
+      'LT'
+      'UN'
+      'GR')
+    TabOrder = 7
   end
   inherited q_padrao: TFDQuery
     SQL.Strings = (
@@ -204,7 +274,7 @@ inherited frm_Produto: Tfrm_Produto
     object q_padraoID_PRODUTO: TIntegerField
       FieldName = 'ID_PRODUTO'
       Origin = 'ID_PRODUTO'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ProviderFlags = [pfInWhere, pfInKey]
       Required = True
     end
     object q_padraoPRODUTO_DESCRICAO: TStringField
@@ -217,6 +287,7 @@ inherited frm_Produto: Tfrm_Produto
       FieldName = 'VL_CUSTO'
       Origin = 'VL_CUSTO'
       Required = True
+      currency = True
       Precision = 18
       Size = 2
     end
@@ -224,6 +295,7 @@ inherited frm_Produto: Tfrm_Produto
       FieldName = 'VL_VENDA'
       Origin = 'VL_VENDA'
       Required = True
+      currency = True
       Precision = 18
       Size = 2
     end

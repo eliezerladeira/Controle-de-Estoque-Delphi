@@ -31,7 +31,6 @@ type
     procedure cmbChavePesquisaChange(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure DBGrid1DblClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -99,11 +98,6 @@ begin
 
   end;
 
-end;
-
-procedure TfrmPesquisaPadrao.DBGrid1DblClick(Sender: TObject);
-begin
-  btTransferir.Click;
 end;
 
 procedure TfrmPesquisaPadrao.FormClose(Sender: TObject;

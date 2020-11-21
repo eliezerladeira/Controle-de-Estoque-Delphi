@@ -1,6 +1,5 @@
 inherited frm_Produto: Tfrm_Produto
   Caption = 'Cadastro de Produtos'
-  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]

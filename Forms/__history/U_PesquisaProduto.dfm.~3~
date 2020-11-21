@@ -1,5 +1,7 @@
 inherited frmPesquisaProduto: TfrmPesquisaProduto
   Caption = 'Pesquisa de Produtos'
+  ExplicitWidth = 800
+  ExplicitHeight = 600
   PixelsPerInch = 96
   TextHeight = 13
   inherited Panel1: TPanel
@@ -13,9 +15,6 @@ inherited frmPesquisaProduto: TfrmPesquisaProduto
     end
     inherited btPesquisa: TBitBtn
       OnClick = btPesquisaClick
-    end
-    inherited btTransferir: TBitBtn
-      OnClick = btTransferirClick
     end
   end
   inherited DBGrid1: TDBGrid
