@@ -82,6 +82,7 @@ begin
         q_padrao.Open();
         q_padrao.Locate('ID_CLIENTE', frmPesquisaCliente.codigo, []);
       end;
+
   finally
     frmPesquisaCliente.Free;
     frmPesquisaCliente := nil;

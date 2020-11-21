@@ -17,8 +17,6 @@ type
     qPesqPadraoTIPO: TStringField;
     qPesqPadraoCADASTRO: TDateField;
     procedure btPesquisaClick(Sender: TObject);
-    procedure btTransferirClick(Sender: TObject);
-    procedure DBGrid1DblClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -73,22 +71,6 @@ begin
   else
     abort;
 
-end;
-
-procedure TfrmPesquisaUsuarios.btTransferirClick(Sender: TObject);
-begin
-  if qPesqPadrao.RecordCount > 0 then
-    begin
-      codigo := qPesqPadraoID_USUARIO.AsInteger;
-    end
-  else
-  abort;
-end;
-
-procedure TfrmPesquisaUsuarios.DBGrid1DblClick(Sender: TObject);
-begin
-  inherited;
-  btTransferir.Click;
 end;
 
 end.

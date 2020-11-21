@@ -89,11 +89,7 @@ begin
   frmPesquisaUsuarios := TfrmPesquisaUsuarios.Create(self);
   frmPesquisaUsuarios.ShowModal;
   try
-    if frmPesquisaUsuarios.codigo > 0 then
-      begin
-        q_padrao.Open();
-        q_padrao.Locate('ID_USUARIO', frmPesquisaUsuarios.codigo, []);
-      end;
+
   finally
     frmPesquisaUsuarios.Free;
     frmPesquisaUsuarios := nil;
