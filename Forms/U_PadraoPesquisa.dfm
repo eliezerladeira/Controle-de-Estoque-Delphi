@@ -572,4 +572,33 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
     Left = 104
     Top = 80
   end
+  object DSPesqPadrao: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = qPesqPadrao
+    BCDToCurrency = False
+    Left = 184
+    Top = 80
+  end
+  object RelPesqPadrao: TfrxReport
+    Version = '6.8'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick, pbCopy, pbSelection]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Padr'#227'o'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 44155.972143171300000000
+    ReportOptions.LastChange = 44155.972143171300000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 264
+    Top = 80
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
 end

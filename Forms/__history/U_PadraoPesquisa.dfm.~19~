@@ -10,8 +10,11 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
   WindowState = wsMaximized
+  OnClose = FormClose
+  OnKeyPress = FormKeyPress
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -81,10 +84,10 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
       Width = 105
       Height = 21
       TabOrder = 0
+      OnChange = cmbChavePesquisaChange
       Items.Strings = (
         'C'#243'digo'
         'Nome'
-        'Descri'#231#227'o'
         'Cadastro'
         'Per'#237'odo')
     end
@@ -391,6 +394,7 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
+      ModalResult = 1
       TabOrder = 5
     end
     object btImprimir: TBitBtn
@@ -539,12 +543,14 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
     Width = 784
     Height = 447
     Align = alClient
+    DataSource = dtsPesqPadrao
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnDblClick = DBGrid1DblClick
   end
   object Panel2: TPanel
     Left = 0
