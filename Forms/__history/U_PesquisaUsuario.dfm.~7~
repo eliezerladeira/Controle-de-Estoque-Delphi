@@ -76,8 +76,6 @@ inherited frmPesquisaUsuarios: TfrmPesquisaUsuarios
     UserName = 'frxDBUsuarios'
   end
   inherited RelPesqPadrao: TfrxReport
-    DataSet = DSPesqPadrao
-    DataSetName = 'frxDBUsuarios'
     ReportOptions.LastChange = 44158.976394548610000000
     Datasets = <
       item

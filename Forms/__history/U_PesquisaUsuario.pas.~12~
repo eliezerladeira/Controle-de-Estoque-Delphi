@@ -39,13 +39,7 @@ procedure TfrmPesquisaUsuarios.btImprimirClick(Sender: TObject);
 begin
   caminho := ExtractFilePath(Application.ExeName);
 
-  if frmPesquisaUsuarios.RelPesqPadrao.LoadFromFile(caminho + 'Rel_Usuario.fr3') then
-    begin
-      RelPesqPadrao.Clear;
-      RelPesqPadrao.LoadFromFile(ExtractFilePath(Application.ExeName) + 'Rel_Usuario.fr3');
-    end
-  else
-    MessageDlg('Relatório não encontrado', mtError, [mbOk], 0);
+
 
 end;
 

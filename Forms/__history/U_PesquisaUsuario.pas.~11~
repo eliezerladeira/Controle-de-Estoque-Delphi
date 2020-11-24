@@ -17,7 +17,8 @@ type
     qPesqPadraoTIPO: TStringField;
     qPesqPadraoCADASTRO: TDateField;
     procedure btPesquisaClick(Sender: TObject);
-    procedure cmbChavePesquisaChange(Sender: TObject);
+    procedure btTransferirClick(Sender: TObject);
+    procedure DBGrid1DblClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,8 +40,30 @@ begin
   qPesqPadrao.SQL.Clear;
 
   qPesqPadrao.SQL.Add('SELECT ID_USUARIO, NOME, TIPO, CADASTRO FROM USUARIO');
-  qPesqPadrao.SQL.Add('WHERE ID_USUARIO =: PID_USUARIO');
-  qPesqPadrao.ParamByName('PID_USUARIO').AsString := txtNome.Text;
+
+  case cmbChavePesquisa.ItemIndex of
+    0:begin
+      Qpesqpadrao.SQL.Add('WHERE ID_USUARIO =:PID_USUARIO'); // criamos o parametro
+      Qpesqpadrao.ParamByName('PID_USUARIO').AsString := txtnome.Text; // aponta para o campo do parametro
+    end;
+
+    1:begin
+      qPesqPadrao.SQL.Add('WHERE NOME LIKE :PNOME');
+      qPesqPadrao.ParamByName('PNOME').AsString := '%' + txtNome.Text + '%';
+    end;
+
+    2:begin
+      qPesqPadrao.SQL.Add('WHERE CADASTRO =:PCADASTRO');
+      qPesqPadrao.ParamByName('PCADASTRO').AsDate := StrToDate(mskInicio.Text);
+    end;
+
+    3:begin
+      qPesqPadrao.SQL.Add('WHERE CADASTRO BETWEEN =:PINICIO AND =:PFIM');
+      qPesqPadrao.ParamByName('PINICIO').AsDate := StrToDate(mskInicio.Text);
+      qPesqPadrao.ParamByName('PFIM').AsDate := StrToDate(mskFim.Text);
+    end;
+  end;
+
   qPesqPadrao.Open;
 
   if qPesqPadrao.IsEmpty then
@@ -52,17 +75,20 @@ begin
 
 end;
 
-procedure TfrmPesquisaUsuarios.cmbChavePesquisaChange(Sender: TObject);
+procedure TfrmPesquisaUsuarios.btTransferirClick(Sender: TObject);
 begin
-  case cmbChavePesquisa.ItemIndex of
-    0:begin
-      txtNome.Visible := True;
-      txtNome.SetFocus;
-      mskInicio.Visible := False;
+  if qPesqPadrao.RecordCount > 0 then
+    begin
+      codigo := qPesqPadraoID_USUARIO.AsInteger;
+    end
+  else
+  abort;
+end;
 
-    end;
-
-  end;
+procedure TfrmPesquisaUsuarios.DBGrid1DblClick(Sender: TObject);
+begin
+  inherited;
+  btTransferir.Click;
 end;
 
 end.
